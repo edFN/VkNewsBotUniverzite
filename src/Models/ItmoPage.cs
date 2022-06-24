@@ -56,7 +56,7 @@ namespace VkBot.Models
         {
             this.url = "https://news.itmo.ru/ru/events/"; //страница анонсов итмо
             this.name = "ИТМО";
-            this.Image = Directory.GetCurrentDirectory() + @"/images/ITMO.jpg"; // пока так
+            this.Image = Directory.GetCurrentDirectory() + @"/images/ITMO.jpg";
         }
         public override string getUrl()
         {
@@ -119,7 +119,7 @@ namespace VkBot.Models
         public ItmoPageManager()
         {
             this.page = new ItmoPage();
-            this.client = new HttpClient(); //для работы с http
+            this.client = new HttpClient();
             this.parser = new ItmoPageParser((ItmoPage)page);
 
         }
