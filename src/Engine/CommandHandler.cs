@@ -21,7 +21,7 @@ namespace VkBot.Engine
         }
         public CommandHandler(CommandsDict cmd,char prefix = '/') {
             this.lCommands = cmd;
-            this.prefix = '/';
+            this.prefix = prefix;
         }
         public CommandHandler AddCommand(string key,Command value)
         {
