@@ -10,7 +10,7 @@ namespace VkBot.Engine
         
         const bool COMMAND_NOT_FOUND = false;
 
-        public CommandsDict lCommands; // hello => write()
+        public CommandsDict lCommands;
         private char prefix;
 
         
@@ -54,10 +54,10 @@ namespace VkBot.Engine
             return key.Split()[0].Substring(1);
         }
 
-        //tryFindCommad
+      
         private bool TryFind(string key,out string result)
         {
-            string noPrefix = noPrefixnArguments(key); //getting only name of command
+            string noPrefix = noPrefixnArguments(key); 
             if (lCommands.ContainsKey(noPrefix))
             {
                 string argument = key.Substring(noPrefix.Length + 1);
