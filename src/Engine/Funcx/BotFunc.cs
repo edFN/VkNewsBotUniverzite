@@ -8,7 +8,7 @@ namespace VkBot.Engine.Funcx
     public static class BotFunc
     {
 
-        //for simple sending
+        
         public static void Send(string message,MessageNew msg, ref VkNet.VkApi _api)
         {
             try
